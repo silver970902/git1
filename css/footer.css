@@ -1,0 +1,212 @@
+@import url(./common.css);
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+
+body{
+  margin: 0 auto !important;
+  max-width: 1920px;
+  min-width: 320px;
+  height: 100%;
+  color: #333;
+  line-height: 24px;
+  font-size: 15px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 300;
+  letter-spacing: 0px;
+  word-break: break-all;
+  word-wrap: break-word;
+  word-break: keep-all;}
+
+
+
+
+
+footer{
+  background-color: #636981;
+}
+footer>div{
+  position: relative;
+  margin: 0 auto;
+  width:1100px ;
+  padding: 15px 350px 15px 0;
+
+}
+footer>div>address{
+  color: #fff;
+  font-style: normal;
+  font-weight: normal;
+}
+footer>div>address>span{
+  margin-right: 15px;
+  vertical-align: top;
+  position: relative;
+  display: inline-block;
+  font-size: 15px;
+  color: #fff;
+
+}
+footer>div>p{    color: rgba(255,255,255,0.8);
+  font-size: 16px;
+  font-weight: 300;}
+footer>div>address>span>strong{color: #fff;}
+footer>div>address>span>a{color: #fff;}
+footer>div>address>span:nth-of-type(3)>a{color: #000063;
+  font-weight: bold;}
+
+footer>div>address>span:nth-of-type(3){color: #fff;}
+
+footer>div>address>span:nth-of-type(2)::before{    display: block;
+  content: '';
+  position: absolute;
+  top: 7px;
+  left: -10px;
+  width: 1px;
+  height: 12px;
+  background: #fff;}
+footer>div>address>span:nth-of-type(3)::before{    display: block;
+  content: '';
+  position: absolute;
+  top: 7px;
+  left: -10px;
+  width: 1px;
+  height: 12px;
+  background: #fff;}
+footer>div>address>span:nth-of-type(4)::before{    display: block;
+  content: '';
+  position: absolute;
+  top: 7px;
+  left: -10px;
+  width: 1px;
+  height: 12px;
+  background: #fff;}
+footer>div>a{
+  position: absolute;
+  top: 10px;
+  right: 350px;
+}
+
+footer>div>div{
+  position: absolute;
+  top:15px;
+  right: 0;
+  width: 334px;
+ 
+
+}
+footer>div>div>div{
+  display: inline-block;
+  border:1px solid rgba(255,255,255,0.5);
+  width: 165px;
+  height: 40px;
+  color: #fff;
+  line-height: 38px;
+  font-size: 15px;
+  text-align: center;
+  padding: 0 7px;
+  
+}
+footer>div>div>div>a{
+  display: block;
+  background-image:url(../kctc/arrow_rb.png);
+  background-repeat: no-repeat;
+  background-position: 100% 24px;
+  text-align: center;
+  color: #fff;}
+
+
+
+
+
+
+
+@media(max-width:1100px){
+  footer{
+    background-color: #636981;
+  }
+  footer>div{
+    position: relative;
+    margin: 0 ;
+    width: auto ;
+    padding: 15px 300px 15px 15px;
+
+  }
+  footer>div>address{
+    color: #fff;
+    font-style: normal;
+    font-weight: normal;
+  }
+  footer>div>address>span{
+    margin-right: 5px;
+    vertical-align: top;
+    position: relative;
+    display: inline-block;
+    font-size: 12px;
+    color: #fff;
+  }
+  footer>div>p{    color: rgba(255,255,255,0.8);
+    font-size: 13px;
+    font-weight: 300;}
+  footer>div>address>span>strong{color: #fff;}
+  footer>div>address>span>a{color: #fff;}
+  footer>div>address>span:nth-of-type(3)>a{color: #000063;
+    font-weight: bold;}
+
+  footer>div>address>span:nth-of-type(3){color: #fff;}
+
+  footer>div>address>span:nth-of-type(2)::before{    display: block;
+    content: '';
+    position: absolute;
+    top: 7px;
+    left: -5px;
+    width: 1px;
+    height: 12px;
+    background: #fff;}
+  footer>div>address>span:nth-of-type(3)::before{    display: block;
+    content: '';
+    position: absolute;
+    top: 7px;
+    left: -5px;
+    width: 1px;
+    height: 12px;
+    background: #fff;}
+  footer>div>address>span:nth-of-type(4)::before{    display: block;
+    content: '';
+    position: absolute;
+    top: 7px;
+    left: -5px;
+    width: 1px;
+    height: 12px;
+    background: #fff;}
+  footer>div>a{
+   
+    right: 280px;
+  }
+
+  footer>div>div{
+    position: absolute;
+    top:15px;
+    right: 15px;
+    width: 268px;
+  
+
+  }
+  footer>div>div>div{
+    display: inline-block;
+    border:1px solid rgba(255,255,255,0.5);
+    width: 132px;
+    height: 36px;
+    color: #fff;
+    line-height: 38px;
+    font-size: 13px;
+    text-align: center;
+    padding: 0 7px;
+    
+  }
+  footer>div>div>div>a{
+    display: block;
+    background-image:url(../kctc/arrow_rb.png);
+    background-repeat: no-repeat;
+    background-position: 100% 20px;
+    text-align: center;
+    color: #fff;}
+}

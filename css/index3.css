@@ -1,0 +1,309 @@
+@import url(./common.css);
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+
+.w2{
+  width: 100%;
+  height: 70px;
+  background-color: #eee;
+}
+.w2>ul{
+  width: 1100px;
+  margin: 0 auto; 
+  
+  align-items: center;
+    
+}
+.w2>ul>li{
+  position: relative;
+  padding: 0 65px 0 30px;
+  display: block;
+  float: left;
+  min-width: 199px;
+  
+  /* height: 69px;
+  line-height: 69px; */
+}
+.w2>ul>li:nth-of-type(1){padding: 0;min-width:69px ;}
+  
+.w2>ul>li:nth-of-type(2){
+  border-left:1px solid rgb(204, 204, 204);
+  line-height: 69px;
+}
+.w2>ul>li:nth-of-type(3){
+  width: 250px;
+  border-left:1px solid rgb(204, 204, 204);
+  border-right:1px solid rgb(204, 204, 204);
+  line-height: 69px;}
+.w2>ul>li:nth-of-type(4){
+  width: 300px;
+  border-right:1px solid rgb(204, 204, 204);
+  line-height: 69px;}
+.w2>ul>li:nth-of-type(1)>a{
+  margin: 0;
+  display: block;
+  width: 69px;
+  line-height: 69px;
+text-align: center;
+background-image: url(../kctc/ico_home.png);
+background-repeat:no-repeat ;
+background-position: 50%;
+color: rgba(0, 0, 0, 0);
+}
+.w2>ul>li:nth-of-type(2)>a::after{
+  display: block;
+  position: absolute;
+  content:'';
+  top: 40%;
+  right: 20px;
+  width: 20px;
+  height: 20px;
+  background: url(../kctc/arrow_btm.png);
+}
+.w2>ul>li:nth-of-type(3)>a::after{
+  display: block;
+  position: absolute;
+  content:'';
+  top: 40%;
+  right: 20px;
+  width: 20px;
+  height: 20px;
+  background: url(../kctc/arrow_btm.png);
+}
+.w2>ul>li:nth-of-type(4)>a::after{
+  display: block;
+  position: absolute;
+  content:'';
+  top: 40%;
+  right: 20px;
+  width: 20px;
+  height: 20px;
+  background: url(../kctc/arrow_btm.png);}
+
+
+
+.t1{display: block;
+  width: 100%;
+  background-image: url(../kctc/bg_sub2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 230px;}
+  .t1>h2{
+    text-align: center;
+    line-height:230px;
+    color: #fff;
+    font-size: 40px;}
+  .t2{margin: 0 auto;
+    padding: 50px 0 70px;
+    width: 1100px;
+    min-height: 450px;}
+  
+  .t2>div:nth-of-type(1){margin-bottom: 70px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #ddd;}
+  .t2>div:nth-of-type(1)>p:nth-of-type(1){    
+    color: #333;
+    line-height: 48px;
+    font-size: 24px;}
+  .t2>div:nth-of-type(1)>p:nth-of-type(2){
+    color: #000063;
+    line-height: 40px;
+    font-size: 30px;
+    font-weight: bold !important
+  }
+  .t2>div:nth-of-type(2)>p{margin-bottom: 35px;}
+  .t2>div>div{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .t2 img{    
+    max-width: 100%;
+    vertical-align: top;}
+  
+    
+.list{
+  display: none;
+  padding: 10px 0;
+  width: 100%;
+  position: absolute;
+  border: 1px solid #eee;
+  background: #eee;
+  top:70px;
+  left: -1px;
+  line-height: 40px;
+
+}
+.a:hover>ul{
+
+  display: block;
+}
+.list>li>a{
+  width: 100%;
+  height: 100%;
+  display: block;
+  padding-left: 15px;
+}
+
+
+.list>li>a:hover{color: #fff;
+  background: #000063;
+  transition:0 ;}
+
+    
+
+
+
+@media(max-width:1100px){
+  .w2{display: none;
+    height: 70px;
+    background-color: beige;
+  }
+  .w2>ul{
+    
+   /*  width: 1100px;
+    margin: 0 auto; 
+    align-items: center; */
+  }
+  .w2>ul>li{
+    position: relative;
+    padding: 0 65px 0 30px;
+    display: block;
+    float: left;
+    min-width: 199px;
+    /* height: 69px;
+    line-height: 69px; */
+  }
+  .w2>ul>li:nth-of-type(1){padding: 0;min-width:69px ;}
+    
+  .w2>ul>li:nth-of-type(2){
+    border-left:1px solid rgb(204, 204, 204);
+    line-height: 69px;
+  }
+  .w2>ul>li:nth-of-type(3){
+    width: 250px;
+    border-left:1px solid rgb(204, 204, 204);
+    border-right:1px solid rgb(204, 204, 204);
+    line-height: 69px;}
+  .w2>ul>li:nth-of-type(4){
+    width: 300px;
+    border-right:1px solid rgb(204, 204, 204);
+    line-height: 69px;}
+  .w2>ul>li:nth-of-type(1)>a{
+    margin: 0;
+    display: block;
+    width: 69px;
+    line-height: 69px;
+  text-align: center;
+  background-image: url(../kctc/ico_home.png);
+  background-repeat:no-repeat ;
+  background-position: 50%;
+  color: rgba(0, 0, 0, 0);
+  }
+  .w2>ul>li:nth-of-type(2)>p::after{
+    position: absolute;
+    content:'';
+    top: 40%;
+    right: 20px;
+    width: 20px;
+    height: 20px;
+    background: url(../kctc/arrow_btm.png);
+  }
+  .w2>ul>li:nth-of-type(3)>p::after{
+    position: absolute;
+    content:'';
+    top: 40%;
+    right: 20px;
+    width: 20px;
+    height: 20px;
+    background: url(../kctc/arrow_btm.png);
+  }
+  .w2>ul>li:nth-of-type(4)>p::after{position: absolute;
+    content:'';
+    top: 40%;
+    right: 20px;
+    width: 20px;
+    height: 20px;
+    background: url(../kctc/arrow_btm.png);}
+  
+  
+  
+  .t1{
+    
+    display: block;
+    background-image: url(../kctc/bg_sub2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 230px;}
+  .t1>h2{
+    width: 100%;
+    text-align: center;
+    line-height:230px;
+    color: #fff;
+    font-size: 40px;}
+  .t2{
+    margin: 0 auto;
+    padding: 20px 18px 36px;
+    width: 100%;
+    min-height: 450px;
+    }
+
+  .t2>div:nth-of-type(1){margin-bottom: 70px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #ddd;}
+  .t2>div:nth-of-type(1)>p:nth-of-type(1){    
+    color: #333;
+    line-height: 48px;
+    font-size: 24px;}
+  .t2>div:nth-of-type(1)>p:nth-of-type(2){
+    color: #000063;
+    line-height: 40px;
+    font-size: 30px;
+    font-weight: bold !important
+  }
+  .t2>div:nth-of-type(2)>p{
+    margin-bottom: 35px;}
+  .t2>div:nth-of-type(2){
+    width: 100%;
+  }
+  
+  .t2>div>div{
+    display: flex;
+    justify-content:center;
+    width: 100%;
+
+  }
+
+  
+  .t2 img{    
+    max-width: 100%;
+    vertical-align: top;}
+
+
+  .t2>div>div>img:nth-of-type(1){width: 62%;}
+  .t2>div>div>img:nth-of-type(2){width: 35%;}
+}
+
+
+
+
+@media(max-width:760px){
+  .t2>div>div{
+    display: block;
+    width: 100%;
+    
+  }
+  .t2>div>div>div:nth-of-type(1){width: 100%;}
+  .t2>div>div>div:nth-of-type(2){width: auto;
+    padding: 0 30px;
+    text-align: center;
+  }
+  .t2>div>div>div:nth-of-type(1)>img{
+    width: 100%;
+    vertical-align: top;
+  }
+  
+  .t2>div>div>div:nth-of-type(2)>img{
+    max-width:100% ;
+  }
+  }
