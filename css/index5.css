@@ -83,8 +83,9 @@ color: rgba(0, 0, 0, 0);
 
 
 
-.j1
-{display: block;
+.j1{
+  position: relative; 
+  display: block;
   background-image: url(../kctc/bg_sub4.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -94,6 +95,9 @@ color: rgba(0, 0, 0, 0);
   line-height:230px;
   color: #fff;
   font-size: 40px;
+}
+.j1>a{
+  display: none;
 }
 .j2{
   margin: 0 auto;
@@ -311,6 +315,36 @@ color: rgba(0, 0, 0, 0);
     color: #fff;
     font-size: 40px;
   }
+  .j1
+{display: block;
+  background-image: url(../kctc/bg_sub4.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 230px;}
+.j1>h2{  
+  text-align: center;
+  line-height:230px;
+  color: #fff;
+  font-size: 40px;
+}
+.j1>a{
+  display: block;
+  width: 9px;
+  height: 14px;
+  position: absolute;
+  top: 50%;
+  margin-top: -7px;
+}
+.j1>a:nth-of-type(1){
+  background:url(../kctc/btn_prev_menu.png);
+  background-size: 9px 14px;
+  left: 18px;
+}
+.j1>a:nth-of-type(2){
+  background:url(../kctc/btn_next_menu.png);
+  background-size: 9px 14px;
+  right: 18px;
+}
   .j2{
     margin: 0 auto;
     width: 100%;

@@ -79,8 +79,8 @@ color: rgba(0, 0, 0, 0);
 
 
 
-.o1
-{
+.o1{
+  position: relative; 
   margin: 0;
   width: 100%;
   display: block;
@@ -93,6 +93,10 @@ color: rgba(0, 0, 0, 0);
   line-height:230px;
   color: #fff;
   font-size: 40px;
+}
+
+.o1>a{
+  display: none;
 }
 .o2{   
   width: 1100px;
@@ -377,6 +381,24 @@ color: rgba(0, 0, 0, 0);
     line-height:230px;
     color: #fff;
     font-size: 40px;
+  }
+  .o1>a{
+    display: block;
+    width: 9px;
+    height: 14px;
+    position: absolute;
+    top: 50%;
+    margin-top: -7px;
+  }
+  .o1>a:nth-of-type(1){
+    background:url(../kctc/btn_prev_menu.png);
+    background-size: 9px 14px;
+    left: 18px;
+  }
+  .o1>a:nth-of-type(2){
+    background:url(../kctc/btn_next_menu.png);
+    background-size: 9px 14px;
+    right: 18px;
   }
   .o2{    margin: 0;
     padding: 20px 18px 59px;
