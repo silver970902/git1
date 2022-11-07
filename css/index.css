@@ -120,7 +120,11 @@ body{
   text-align: center;
 }
 
-
+.inner>a:nth-of-type(1):hover{
+  background-color: #000063;
+  border: 2px solid  #fff;
+  color: #fff;
+}
   
   .inner> a:nth-of-type(2){
     margin-left: 10px;
