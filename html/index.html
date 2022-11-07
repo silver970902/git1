@@ -7,7 +7,7 @@
   <title>Document</title>
   <link href="../css/index.css" rel="stylesheet">
   <link href="../css/footer.css" rel="stylesheet">
-  <link rel="stylesheet" href="../css/header.css">
+  <!-- <link rel="stylesheet" href="../css/header.css"> -->
   <link rel="icon" type="image/png" href="../favicomatic/favicon-32x32.png" sizes="32x32" />
   <link rel="icon" type="image/png" href="../favicomatic/favicon-16x16.png" sizes="16x16" />
   <meta property="og:url"                content="https://silver970902.github.io/git1/html/index.html" />
@@ -22,19 +22,33 @@
   <meta property="twitter:title"              content="그린" />
   <meta property="twitter:description"        content="작업" />
   <meta property="twitter:image"              content="http://static01.nyt.com/images/2015/02/19/arts/international/19iht-btnumbers19A/19iht-btnumbers19A-facebookJumbo-v2.jpg" />
-  
+  <link rel="stylesheet" type="text/css" href="../css/demo copy.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style copy.css" />
+  <link rel="stylesheet" type="text/css" href="../css/custom copy.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <script type="text/javascript" src="../js/modernizr.custom.79639.js"></script>
+
+  <noscript>
+  <link rel="stylesheet" type="text/css" href="../css/styleNoJS copy.css" />
+  </noscript>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+  <link rel rel="stylesheet" href="../scss/owl.carousel.css">
+
+
 </head>
 <body>
   <div id="wrap">
-    <div id="wrap">
-      <header id="header" class="header">
-        <h1>
+    <header id="header" class="header">
+      <div class="inner">
+        <h1 class="head_name">
           <a href="./index.html" ><img src="../kctc/logo.png"></a>
         </h1>
-        <nav>
+        <nav class="head_menu">
+          <span>bing</span>
           <ul>
             <li>
-              <a href="./side1.html">기업소개</a>
+              <a >기업소개</a>
               <div class="dep_web">
                 <ul>
                   <li>
@@ -68,7 +82,7 @@
                   <li class="k1">
                     <div class="wep2 cos1">
                       <a href="./side3.html">인재채용</a>
-                      <ul class="wep3">
+                      <ul class="wep3 ">
                         <li><a href="#"><span>KCTC인재상</span></a></li>
                         <li><a href="#"><span>인사복지</span></a></li>
                         <li><a href="#"><span>채용절차</span></a></li>
@@ -92,7 +106,7 @@
               </div>
             </li>
             <li>
-              <a href="./side2.html">사업소개</a>
+              <a >사업소개</a>
               <div class="dep_web">
                 <ul >
                   <li>
@@ -167,7 +181,7 @@
               </div>
             </li>
             <li>
-              <a href="./side3.html">지속가능경영</a>
+              <a >지속가능경영</a>
               <div class="dep_web">
                 <ul>
                   <li>
@@ -235,7 +249,7 @@
               </div>
             </li>
             <li>
-              <a href="./side4.html">투자정보</a>
+              <a >투자정보</a>
               <div class="dep_web">
                 <ul>
                   <li class="ji">
@@ -301,327 +315,635 @@
             </li>
           </ul>
         </nav>
-        <div> 
-          <a href="#">e-Biz</a>
-          <a href="#">ENG</a>
-          <div>
-            <button class="button" type="button">
-              <span></span>
-              <span></span>
-              <span></span>
-            </button>
-            <div class="m_menu">
+        <a href="#">e-Biz</a>
+        <a href="#">ENG</a>
+        <div class="side_menu">
+          <button class="button" type="button">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button> 
+          <div class="m_menu">
               <ul>
-                <li>
+                <li class="sm1">
                   <a href="./side1.html">회사소개</a>
-                </li>
-                  <ul>
+                  <ul class="m_menu_01 dep_menu ">
                     <li><a href="./side1.html">기업소개</a></li>
                     <li><a href="#">CEO인사말</a></li>
                     <li><a href="#">기업연혁</a></li>
-                    <li><a href="#">사업장소개</a></li>
+                    <li class="has_dep">
+                      <a href="#">사업장소개</a>
+                      <ul class="depth3">
+                        <li><a href="#">지사/지점</a></li>
+                        <li><a href="#">물류센터</a></li>
+                      </ul>
+                    </li>
                     <li><a href="#">네트워크</a></li>
-                    <li><a href="#">인재채용</a></li>
+                    <li class="has_dep">
+                      <a href="#">인재채용</a>
+                      <ul class="depth3">
+                        <li><a href="#">KCTC 인재상</a></li>
+                        <li><a href="#">인사복지</a></li>
+                        <li><a href="#">채용절차</a></li>
+                        <li><a href="#">채용공고</a></li>
+                      </ul>
+                    </li>
                   </ul>
                 </li>
-                <li>
+                <li class="sm2">
                   <a href="./side2.html">사업소개</a>
-                  <ul>
-                    <li><a href="#">컨테이너 사업</a></li>
-                    <li><a href="#">BULK사업</a></li>
-                    <li><a href="#">TPL사업</a></li>
+                  <ul class="m_menu_02 dep_menu">
+                    <li class="has_dep">
+                      <a href="#">컨테이너 사업</a>
+                      <ul class="depth3">
+                        <li><a href="#">사업안내</a></li>
+                        <li><a href="#">컨테이너 운송</a></li>
+                        <li><a href="#">RO/RO 하역</a></li>
+                        <li><a href="#">CY·CFS 사업</a></li>
+                      </ul>
+                    </li>
+                    <li class="has_dep">
+                      <a href="#">BULK사업</a>
+                      <ul class="depth3">
+                        <li><a href="#">사업안내</a></li>
+                        <li><a href="#">국제물류</a></li>
+                        <li><a href="#">중량물</a></li>
+                        <li><a href="#">BULK 하역</a></li>
+                        <li><a href="#">BULK 운송</a></li>
+                      </ul>
+                    </li>
+                    <li class="has_dep">
+                      <a href="#">TPL사업</a>
+                    	<ul class="depth3">
+                        <li><a href="#">사업안내</a></li>
+                        <li><a href="#">시설현황</a></li>
+                        <li><a href="#">3PL 서비스 및 시스템</a></li>
+                        <li><a href="#">Operation Flow</a></li>
+                        <li><a href="#">특화운영분야</a></li>
+                      </ul>
+                    </li>
                     <li><a href="#">터미널및창고운영사업</a></li>
                     <li><a href="#">해외사업</a></li>
                   </ul>
                 </li>
-                <li>
+                <li class="sm3">
                   <a href="./side3.html">지속가능경영</a>
-                </li>
-                  <ul>
+                  <ul class="m_menu_03 dep_menu">
                     <li><a href="#">가치관 경영</a></li>
-                    <li><a href="#">윤리경영</a></li>
-                    <li><a href="#">안정보건경영</a></li>
+                    <li class="has_dep">
+                      <a href="#">윤리경영</a>
+                      <ul class="depth3">
+                        <li><a href="#">윤리경영 실천 / CEO's Message</a></li>
+                        <li><a href="#">행동강령</a></li>
+                        <li><a href="#">윤리규범</a></li>
+                        <li><a href="#">신문고</a></li>
+                      </ul>
+                    </li>
+                    <li class="has_dep">
+                      <a href="#">안정보건경영</a>
+                      <ul class="depth3">
+                        <li><a href="#">안전보건경영방침</a></li>
+                        <li><a href="#">안전보건경영활동</a></li>
+                        <li><a href="#">종사자 의견</a></li>
+                      </ul>
+                    </li>
                     <li><a href="#">인증현황</a></li>
                     <li><a href="#">사회공헌</a></li>
                   </ul>
-                </li>
-                <li>
+                </li >
+                <li class="sm4">
                   <a href="./side4.html">투자정보</a>
-                  <ul>
-                    <li><a href="#">경영정보</a></li>
+                  <ul class="m_menu_04 dep_menu">
+                    <li class="has_dep">
+                      <a href="#">경영정보</a>
+                    	<ul class="depth3">
+                        <li><a href="#">주주구성</a></li>
+                        <li><a href="#">이사회</a></li>
+                        <li><a href="#">기업지배구조</a></li>
+                      </ul>
+                    </li class="has_dep">
                     <li><a href="#">재무정보</a></li>
                     <li><a href="#">공시정보</a></li>
-                    <li><a href="#">IR공고</a></li>
+                    <li class="has_dep">
+                      <a href="#">IR공고</a>
+                      <ul class="depth3">
+                        <li><a href="#">결산공고</a></li>
+                        <li><a href="#">발행주식수 및 자본금 변동현황</a></li>
+                        <li><a href="#">사업보고서 공고</a></li>
+                      </ul>
+                    </li>
                   </ul>
                 </li>
               </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="wrap1">
+      <div class="top_main">
+        <div id="slider" class="sl-slider-wrapper">
+
+          <div class="sl-slider">
+          
+            <div class="sl-slide bg-1" data-orientation="horizontal" >
+              <div class="sl-slide-inner">
+                <div class="deco" data-icon="H"></div>
+                <h2> 미래를 여는 
+                  <strong>종합물류기업</strong><img src="../kctc/logo_white.png"></h2>
+                <blockquote><p> 최첨단 물류 시스템을 통한 <br>원스톱 컨테이너 서비스 제공</p></blockquote>
+              </div>
             </div>
-          </div>
-        </div> 
-      </header>
-    <div>
-      <div id="main">
-        <div>
-          <div class="main1">
-            <div class="main_img" ></div>
-            <h2>
-              미래를 여는 
-              <strong>종합물류기업</strong><img src="../kctc/logo_white.png">
-            </h2>
-            <blockquote>
-              <p>
-                최첨단 물류 시스템을 통한 원스톱 컨테이너 서비스 제공
-              </p>
-            </blockquote>
-          </div>
-          <div class="main2">
-            <div class="main_img2" ></div>
-            <h2>
-              계속되는<img src="../kctc/logo_white.png">의
-              <strong>종량물 운송 신화</strong>
-            </h2>
-            <blockquote>
-              <p>세계 최고 수준의 초중량물 운송 및 컨설팅 서비스</p>
-            </blockquote>
             
-          </div>
-          <div class="main3">
-            <div class="main_img3" ></div>
-            <h2>
-              고객과 함계 나아가는
-              <strong>종합물류기업</strong>
-            </h2>
-            <blockquote>
+            <div class="sl-slide bg-2" data-orientation="horizontal"  >
+              <div class="sl-slide-inner">
+                <div class="deco" data-icon="q"></div>
+                <h2> 계속되는<img src="../kctc/logo_white.png">의
+                  <strong>중량물 운송 신화</strong></h2>
+                <blockquote><p> 세계 최고 수준의 초중량물 운송 및 컨설팅 서비스</p></blockquote>
+              </div>
+            </div>
+            
+            <div class="sl-slide bg-3" data-orientation="horizontal">
+              <div class="sl-slide-inner">
+                <div class="deco" data-icon="O"></div>
+                <h2>고객과 함계 나아가는
+                  <strong>종합물류기업</strong></h2>
+                  <blockquote>
+                    <p>
+                      최적의 물류거점,최첨단 시설기반의 최상의 <br>3자 물류 서비스
+                    </p>
+                  </blockquote>
+             </div>
+            </div>
+            
+            <div class="sl-slide bg-4" data-orientation="horizontal" >
+              <div class="sl-slide-inner">
+                <div class="deco" data-icon="I"></div>
+                <h2>
+                  <strong>물류의 뉴리더</strong><img src="../kctc/logo_white.png">
+                </h2>
+                <blockquote>
+                  <p>
+                    사랑받는 글로벌물류기업 GREAT KCTC
+                  </p>
+                </blockquote></div>
+            </div>
+            
+            <div class="sl-slide bg-5" data-orientation="horizontal" >
+              <div class="sl-slide-inner">
+                <div class="deco" data-icon="t"></div>
+                <h2>
+                  글로벌 물류 사업의 
+                  <strong>중심기업</strong>
+                </h2>
+                <blockquote>
+                  <p>
+                    통관, 복합운송 등 국내·외를 하나로 연결하는 <br> 국제물류서비스
+                  </p>
+                </blockquote></div>
+            </div>
+          </div><!-- /sl-slider -->
+          
+          <nav id="nav-arrows" class="nav-arrows">
+            <span class="nav-arrow-prev">Previous</span>
+            <span class="nav-arrow-next">Next</span>
+          </nav>
+  
+          <nav id="nav-dots" class="nav-dots">
+            <span class="nav-dot-current">컨테이너사업</span>
+            <span>BULK사업</span>
+            <span>TPL</span>
+            <span>터미너 및 창고운영사업</span>
+            <span>해외사업</span>
+          </nav>
+  
+        </div>
+        <div class="m_main m_main_visual">
+            <div class="m_slide owl-carousel">
+              <div class="m_main_img m_img1 item visual01" >
+                  <h2>
+                    미래를 여는 
+                    <strong>종합물류기업</strong><br><img src="../kctc/logo_white.png">
+                  </h2>
+                  <p>
+                    최첨단 물류 시스템을 통한 <br>원스톱 컨테이너 서비스 제공
+                  </p>
+              </div>
+              <div class="m_main_img m_img2 item visual02" >
+                <h2>
+                  계속되는<img src="../kctc/logo_white.png">의
+                        <strong>종량물 운송 신화</strong>
+                </h2>
+                <p>
+                  세계 최고 수준의 초중량물 운송 및 컨설팅 서비스
+                </p>
+              </div>
+              <div class="m_main_img m_img3 item visual03" >
+                <h2>
+                  고객과 함계 나아가는
+                  <strong>종합물류기업</strong>
+                </h2>
               <p>
-                최적의 물류거점,최첨단 시설기반의 최상의 <br>3자 물류 서비스
-              </p>
-            </blockquote>
-          </div>
-          <div class="main4">
-            <div class="main_img4" ></div>
-            <h2>
-              <strong>물류의 뉴리더</strong><img src="../kctc/logo_white.png">
-            </h2>
-            <blockquote>
-              <p>
+                  최적의 물류거점,최첨단 시설기반의 최상의 <br>3자 물류 서비스
+                </p>
+              </div>
+              <div class="m_main_img m_img4 item visual04" >
+                <h2>
+                  <strong>물류의 뉴리더</strong><img src="../kctc/logo_white.png">
+                </h2>
+                <p>
                 사랑받는 글로벌물류기업 GREAT KCTC
-              </p>
-            </blockquote>
-          </div>
-          <div class="main5">
-            <div class="main_img5" ></div>
-            <h2>
-              글로벌 물류 사업의 
-              <strong>중심기업</strong>
-            </h2>
-            <blockquote>
-              <p>
-                통관, 복합운송 등 국내·외를 하나로 연결하는 <br> 국제물류서비스
-              </p>
-            </blockquote>
-          </div>
+                </p>
+              </div>
+              <div class="m_main_img m_img5 item visual05" >
+                <h2>
+                  글로벌 물류 사업의 
+                  <strong>중심기업</strong>
+                </h2>
+                <p>
+                  통관, 복합운송 등 국내·외를 하나로 연결하는 <br> 국제물류서비스
+                </p>
+              </div>
+            </div>
+            
+            <div class="nav-dots clear m_main_button">
+              <ul class="m_button hash_wrap clear">
+                <li class="active"><em class="btn_ico1 url">1</em></li>
+                <li><em class="btn_ico2 url">2</em></li>
+                <li><em class="btn_ico3 url">3</em></li>
+                <li><em class="btn_ico4 url">4</em></li>
+                <li><em class="btn_ico5 url">5</em></li>
+              </ul>
+            </div>
         </div>
-        <nav class="img">
-          <span class="img1"><!-- 컨테이너사업 --></span>
-          <span class="img2"><!-- BULK사업 --></span>
-          <span class="img3"><!-- TPL --></span>
-          <span class="img4"><!-- 터미널 및 창고운영사업 --></span>
-          <span class="img5"><!-- 해외사업 --></span>
-        </nav>
-      </div>
-      <div class="m_main">
-        <div>
-          <div class="m_main_img" >
-            <h2>
-              미래를 여는 
-              <strong>종합물류기업</strong><br><img src="../kctc/logo_white.png">
-            </h2>
-            <p>
-              최첨단 물류 시스템을 통한 <br>원스톱 컨테이너 서비스 제공
-            </p>
-          </div>
-          <div>
-            <ul>
-              <li><i class="img1">1</i></li>
-              <li><i class="img2">2</i></li>
-              <li><i class="img3">3</i></li>
-              <li><i class="img4">4</i></li>
-              <li><i class="img5">5</i></li>
-            </ul>
-          </div>
         </div>
+        <div id="scroll"><img src="../kctc/ico_scroll.png" alt="scroll"></div>
       </div>
-      <div id="scroll"><img src="../kctc/ico_scroll.png" alt="scroll"></div>
-    </div>
-    <div class="m1">
-      <div>
-        <div class="m2">
+      <div class="m1">
           <div>
-            <h2>지속가능경영</h2>
-            <p>혁신적인 물류서비스를 통하여 고객의 성공을 돕고 사회의 풍요로움에 기여합니다.</p>
-            <div>
+            <div class="m2">
               <div>
-                <div>
-                  <a href="#">
-                    <img src="../kctc/sustainability1.png">
-                    <div>
-                      <strong>가치관경영</strong>
-                      <span>Value management</span>
+                <h2>지속가능경영</h2>
+                <p>혁신적인 물류서비스를 통하여 고객의 성공을 돕고 사회의 풍요로움에 기여합니다.</p>
+                <div class="swiper mySwiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <a href="#">
+                        <img src="../kctc/sustainability1.png">
+                        <div>
+                          <strong>가치관경영</strong>
+                          <span>Value management</span>
+                        </div>
+                      </a>
                     </div>
-                  </a>
-                </div>
-                <div>
-                  <a href="#">
-                    <img src="../kctc/sustainability2.png">
-                    <div>
-                      <strong>윤리경영</strong>
-                      <span>Ethical management</span>
+                    <div class="swiper-slide">
+                      <a href="#">
+                        <img src="../kctc/sustainability2.png">
+                        <div>
+                          <strong>윤리경영</strong>
+                          <span>Ethical management</span>
+                        </div>
+                      </a>
                     </div>
-                  </a>
-                </div>
-                <div>
-                  <a href="#">
-                    <img src="../kctc/sustainability3.png">
-                    <div>
-                      <strong>안전보건경영</strong>
-                      <span>Safety Management</span>
+                    <div class="swiper-slide">
+                      <a href="#">
+                        <img src="../kctc/sustainability3.png">
+                        <div>
+                          <strong>안전보건경영</strong>
+                          <span>Safety Management</span>
+                        </div>
+                      </a>
                     </div>
-                  </a>
-                </div>
-                <div>
-                  <a href="#">
-                    <img src="../kctc/sustainability4.png">
-                    <div>
-                      <strong>인증현황</strong>
-                      <span>Certification status</span>
+                    <div class="swiper-slide">
+                      <a href="#">
+                        <img src="../kctc/sustainability4.png">
+                        <div>
+                          <strong>인증현황</strong>
+                          <span>Certification status</span>
+                        </div>
+                      </a>
                     </div>
-                  </a>
-                </div>
-                <div>
-                  <a href="#">
-                    <img src="../kctc/sustainability5.png">
-                    <div>
-                      <strong>사회봉사</strong>
-                      <span>Community service</span>
+                    <div class="swiper-slide">
+                      <a href="#">
+                        <img src="../kctc/sustainability5.png">
+                        <div>
+                          <strong>사회봉사</strong>
+                          <span>Community service</span>
+                        </div>
+                      </a>
                     </div>
-                  </a>
+                  </div>
+                  <div class="bar">
+                    <div>
+                      <div class="pointer swiper-pagination"></div>
+                      <div class="next swiper-button-next"></div>
+                      <div class="prev swiper-button-prev"></div>
+                    </div>
+                  </div>  
                 </div>
               </div>  
-            </div>
+            </div> 
           </div>  
-        </div> 
-      </div>  
-      <div class="m3">
-        <div>
-          <ul>
-            <li>
-              <a href="#">
-                <ul>
-                  <li>투자정보</li>
-                  <li>KCTC는 주주의 이익을 최우선으로 합니다.</li>
-                </ul>
-                <span></span>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <ul>
-                  <li>
-                    인재채용
-                  </li>
-                  <li>
-                    물류산업의 미래를 선도할 글로벌 인재를 찾습니다.
-                  </li>
-                </ul>
-                <span></span>
-              </a>              
-            </li>
-          </ul>
-        </div>
-      </div> 
-      <footer>
-        <div>
-          <address>
-            <span>
-              서울시 중구 남대문로 63 한진빌딩 본관 22층
-            </span>
-            <span>
-              
-              대표번호 <strong>02-310-0700</strong>
-            </span>
-            <span><a href="#">개인정보  처리방침</a></span>
-            <span><a>그룹웨어(GW)</a></span>
-          </address>
-          <p> Copyright © KCTC 2017. All rights reserved.</p>
-          <a href="#"><img src="../kctc/WA.png" ></a>
-          <div>
+          <div class="m3">
             <div>
-              <a href="#">원격제어</a>
+              <ul>
+                <li>
+                  <a href="#">
+                    <ul>
+                      <li>투자정보</li>
+                      <li>KCTC는 주주의 이익을 최우선으로 합니다.</li>
+                    </ul>
+                    <span></span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <ul>
+                      <li>
+                        인재채용
+                      </li>
+                      <li>
+                        물류산업의 미래를 선도할 글로벌 인재를 찾습니다.
+                      </li>
+                    </ul>
+                    <span></span>
+                  </a>              
+                </li>
+              </ul>
             </div>
+          </div> 
+          <footer>
             <div>
-              <a href="#">다운로드</a>
+              <address>
+                <span>
+                  서울시 중구 남대문로 63 한진빌딩 본관 22층
+                </span>
+                <span>
+                  
+                  대표번호 <strong>02-310-0700</strong>
+                </span>
+                <span><a href="#">개인정보  처리방침</a></span>
+                <span><a>그룹웨어(GW)</a></span>
+              </address>
+              <p> Copyright © KCTC 2017. All rights reserved.</p>
+              <a href="#"><img src="../kctc/WA.png" ></a>
+              <div>
+                <div>
+                  <a href="#">원격제어</a>
+                </div>
+                <div>
+                  <a href="#">다운로드</a>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-      </footer> 
+          </footer> 
+      </div>
     </div>
-    
-
-    
-    
   </div>
-  <script>
-      const button= document.querySelector('.button')
-    button.onclick =function(){
-      button.classList.toggle('active')
+<style>
+  .swiper-button-next:after{
+    font-size: 20px;
+   
   }
-  const elCk =document.querySelectorAll(`.header>nav>ul>li`);
-    const elWep =document.querySelectorAll(`.dep_web`);
-    let idx=0;
-    
+  .swiper-button-prev:after{
+    font-size: 20px;
+  }
+  .swiper-button-next{
+   right: 0;
+  }
+  .swiper-button-prev{
+    left: 0;
+  }
+  .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet{
+    width: 16px;height: 16px;
+  }
+  .swiper-pagination-bullets.swiper-pagination-horizontal{
+    bottom: 0px;
+    position: static;
+  }
+  .pointer{bottom: 0;}
+</style>
 
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+<script type="text/javascript" src="../js/jquery.ba-cond.min.js"></script>
+<script type="text/javascript" src="../js/jquery.slitslider.js"></script>
+<script src="../js/js.js"></script>
+<script>
+var swiper = new Swiper(".mySwiper", {
 
+       cssMode: true,
+       navigation: {
 
-    elCk.forEach
-    (function(wep,i)
-      {
-        wep.onclick = function(e){ 
-          
-          /* e.preventDefault(); */
-          
-          elCk[idx].classList.remove(`active`)
-          elWep[idx].classList.remove(`active`)
-          elCk[i].classList.add(`active`)
-          elWep[i].classList.add(`active`)
-          
-          idx=i;
-        } 
-      }
-    
-   )
+         nextEl: ".swiper-button-next",
+         prevEl: ".swiper-button-prev",
+       },
+       pagination: {
+         el: ".swiper-pagination",
+         clickable:true
+       },
+       breakpoints: {
+         480: {
+           //effect:"fade",/
+           slidesPerView: 2,
+           spaceBetween: 1
+        /*    navigation:{ enabled:false } ,
+           pagination:{ enabled:false } */
+         },
+         
+         1100: {
+           slidesPerView: 5,
+           spaceBetween: 0,
+         }
+       },
+       mousewheel: true,
+       keyboard: true,
+     });  
+/* const elscroll =document.querySelector(`#scroll`);
+const section = document.querySelectorAll(`wrap1>div`);
+
+let let idx=0,offset=[];
+section.forEach((ele)=>{
+  offset.push(ele.offsetTop);
+
+})
+elscroll.addEventListener(`click`,()=>{
+  window.scrollTo({
+    left:0,
+    top:offset[1],
+    behavior:`smooth`
+  })
+}); */
+/* const elNav =document.querySelectorAll(`.img>span`)
+const elMain = document.querySelectorAll(`.sl-slide>div `)
   
+elNav.forEach((ele,key)=>{
+  let idx=0
+  ele.addEventListener(`click`,()=>{
+    elNav[idx].classList.remove(`active`)
 
+    elMain[idx].classList.remove(`active`)
 
+    elNav[key].classList.add(`active`)
 
+    elMain[key].classList.add(`active`)
 
+    idx=key
+  })   
+});*/
+</script>
 
+<script type="text/javascript">	
 
+  $(function() {
+  
+    var Page = (function() {
 
+      var $navArrows = $( '#nav-arrows' ) ,
+        $nav = $( '#nav-dots > span' ),
+        slitslider = $( '#slider' ).slitslider( {
+          onBeforeChange : function( slide, pos ) {
 
+            $nav.removeClass( 'nav-dot-current' );
+            $nav.eq( pos ).addClass( 'nav-dot-current' );
 
+          }
+        } ),
 
+        init = function() {
 
+          initEvents();
+          
+        },
+        initEvents = function() {
 
+          // add navigation events
+          $navArrows.children( ':last' ).on( 'click', function() {
 
-  /* var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 4,
-        spaceBetween: 30,
-        centeredSlides: true,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true
-        } 
-      })*/;
-  </script>
-</body>
+            slitslider.next();
+            return false;
+
+          } );
+
+          $navArrows.children( ':first' ).on( 'click', function() {
+            
+            slitslider.previous();
+            return false;
+
+          } );
+
+          $nav.each( function( i ) {
+          
+            $( this ).on( 'click', function( event ) {
+              
+              var $dot = $( this );
+              
+              if( !slitslider.isActive() ) {
+
+                $nav.removeClass( 'nav-dot-current' );
+                $dot.addClass( 'nav-dot-current' );
+              
+              }
+              
+              slitslider.jump( i + 1 );
+              return false;
+            
+            } );
+            
+          } );
+          $('.nav-dots').on('mouseenter',function(){
+					slitslider.pause();
+				}).on('mouseleave',function(){
+					slitslider.play();
+				});
+        };
+
+        return { init : init };
+
+    })();
+
+    Page.init();
+
+    /**
+     * Notes: 
+     * 
+     * example how to add items:
+     */
+
+    /*
+    
+    var $items  = $('<div class="sl-slide sl-slide-color-2" data-orientation="horizontal" data-slice1-rotation="-5" data-slice2-rotation="10" data-slice1-scale="2" data-slice2-scale="1"><div class="sl-slide-inner bg-1"><div class="sl-deco" data-icon="t"></div><h2>some text</h2><blockquote><p>bla bla</p><cite>Margi Clarke</cite></blockquote></div></div>');
+    
+    // call the plugin's add method
+    ss.add($items);
+
+    */
+  
+  });
+  const mt =document.querySelector(`.top_main`)
+const elscroll =document.querySelector(`#scroll`);
+const section = document.querySelectorAll(`.wrap1>div`);
+/* console.log(mt.offsetHeight) */
+let offset=[];
+section.forEach((ele)=>{
+  offset.push(ele.offsetTop);
+
+})
+elscroll.addEventListener(`click`,()=>{
+  window.scrollTo({
+    left:0,
+    top:offset[1],
+    behavior:`smooth`
+  })
+}); 
+
+const web =document.querySelector(`.wrap1`)
+//  window.addEventListener(`wheel`,()=>{
+//   let delta,wheel
+  
+//   delta = event.wheelDelta;
+//   clearTimeout(wheel)
+//   wheel= setTimeout(()=>{
+//     if(delta<0&&num<1){
+//       num++;
+      
+//     }else if(delta>0&&num>0){
+//       num--;
+    
+//     }
+   
+//   })
+//   console.log(offset)
+//   console.log(num)
+//  window.scrollTo({
+//     left:0,
+//     top:offset[num],
+//     behavior:`smooth`
+//   })
+// },100) 
+
+let delta,wheel
+$(window).on('wheel',function(){
+  
+  delta = event.wheelDelta;
+  clearTimeout(wheel)
+  wheel= setTimeout(()=>{
+    if(delta<0 && num<1){
+      num++;
+      
+      
+    }else if(delta>0&&num>0){
+      num--;    
+    }
+
+    $('html').stop().animate({
+      scrollTop : offset[num]
+    })
+  })
+ 
+})
+
+  
+</script>
+</body> 
+
 </html>

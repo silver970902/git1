@@ -8,7 +8,10 @@
 <!--   <link href="../css/ai;;.css" rel="stylesheet"> -->
   <link rel="icon" type="image/png" href="../favicomatic/favicon-32x32.png" sizes="32x32" />
   <link rel="icon" type="image/png" href="../favicomatic/favicon-16x16.png" sizes="16x16" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
   <link href="../css/index3.css" rel="stylesheet">
+  <script defer src="../js/js.js"></script>
   
   
   <link href="../css/header.css" rel="stylesheet">
@@ -16,335 +19,405 @@
 </head>
 <body>
   <div class="wrap">
-    <header class="header">
-      <h1>
-        <a href="./index.html" ><img src="../kctc/logo.png"></a>
-      </h1>
-      <nav>
-        <ul>
-          <li>
-            <a href="./side1.html">기업소개</a>
-            <div class="dep_web">
-              <ul>
-                <li>
-                  <div class="wep2 cos2">
-                    <a href="./side1.html">
-                      <div><img src="../kctc/menu1_1.png" ></div>
-                      <span>기업소개</span>
-                    </a>
-                  </div>
-                  <div class="wep2 cos2">
-                    <a href="#">
-                      <div><img src="../kctc/menu1_2.png" ></div>
-                      <span>기업연혁</span>
-                    </a>
-                  </div>
-                </li>
-                <li>
-                  <div class="wep2 cos2">
-                    <a href="#">
-                      <div><img src="../kctc/menu1_3.png" ></div>
-                      <span>CEO인사말</span>
-                    </a>
-                  </div>
-                  <div class="wep2 cos2">
-                    <a href="#">
-                      <div><img src="../kctc/menu1_4.png" ></div>
-                      <span>네트워크</span>
-                    </a>
-                  </div>
-                </li>
-                <li class="k1">
-                  <div class="wep2 cos1">
-                    <a href="./side3.html">인재채용</a>
-                    <ul class="wep3">
-                      <li><a href="#"><span>KCTC인재상</span></a></li>
-                      <li><a href="#"><span>인사복지</span></a></li>
-                      <li><a href="#"><span>채용절차</span></a></li>
-                      <li><a href="#"><span>채용공고</span></a></li>
-                    </ul>
-                  </div>
-                </li>
-                <li class="k2">
-                  <div class="wep2 cos1">
-                    <a href="#">
-                      <div><img src="../kctc/menu1_6.png" ></div>
-                      <span>사업장 소개</span>
-                    </a>
-                    <ul>
-                      <li><a href="#">자사/본사</a></li>
-                      <li><a href="#">물류센터</a></li>
-                    </ul>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </li>
-          <li>
-            <a href="./side2.html">사업소개</a>
-            <div class="dep_web">
-              <ul >
-                <li>
-                  <div class="wep2 cos1">
-                    <a href="./side2.html">
-                      <div>
-                        <img src="../kctc/menu2_1.png" > 
-                      </div>
-                      <span>컨테이너 사업</span>
-                    </a>
-                    <ul class="pon">
-                      <li><a href="#"><span>사업안내</span></a></li>
-                      <li><a href="#"><span>컨테이너 운송</span></a></li>
-                      <li><a href="#"><span>RO/RO 하역</span></a></li>
-                      <li><a href="#"><span>CY·CFS 사업</span></a></li>
-                    </ul>
-                  </div>
-                </li>
-                <li>
-                  <div class="wep2 cos1">
-                    <a>
-                      <div>
-                        <img src="../kctc/menu2_2.png" > 
-                      </div>
-                      <span>BULK사업</span>
-                    </a>
-                    <ul class="pon">
-                      <li><a href="#"><span>사업안내</span></a></li>
-                      <li><a href="#"><span>국제물류</span></a></li>
-                      <li><a href="#"><span>중량물</span></a></li>
-                      <li><a href="#"><span>BULK 하역</span></a></li>
-                      <li><a href="#"><span>BULK 운송</span></a></li>
-                    </ul>
-                  </div >
-                </li>
-                <li>
-                  <div class="wep2 cos1">
-                    <a href="#">
-                      <div>
-                        <img src="../kctc/menu2_3.png" > 
-                      </div>
-                      <span>TPL사업</span>
-                    </a>
-                    <ul class="pon">
-                      <li><a href="#"><span>사업안내</span></a></li>
-                      <li><a href="#"><span>시설현황</span></a></li>
-                      <li><a href="#"><span>3PL서비스 및 시스템</span></a></li>
-                      <li><a href="#"><span>Operation Flow</span></a></li>
-                      <li><a href="#"><span>특화운영분야</span></a></li>
-                    </ul>
-                  </div>
-                </li>
-                <li>
-                  <div class="wep2 cos2">
-                    <a href="#">
-                      <div>
-                        <img src="../kctc/menu2_4.png" > 
-                      </div>
-                      <span>터미널 및 창고 운영사업</span>
-                    </a>
-                  </div>
-                  <div class="wep2 cos2">
-                    <a href="#">
-                      <div>
-                        <img src="../kctc/menu2_5.png" > 
-                      </div>
-                      <span>해외사업</span>
-                    </a>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </li>
-          <li>
-            <a href="./side3.html">지속가능경영</a>
-            <div class="dep_web">
-              <ul>
-                <li>
-                  <div class="wep2 cos1">
-                    <a href="./side3.html">
-                      <div>
-                        <img src="../kctc/menu3_1.png">
-                      </div>
-                      <span>가치관 경영
-                      </span>
-                    </a href="#">
-                  </div>
-                </li>
-                <li>
-                  <div class="wep2 cos1">
-                    <a href="#">
-                      <div>
-                        <img src="../kctc/menu3_2.png">
-                      </div>
-                      <span>윤리경영
-                      </span>
-                    </a>
-                    <ul class="pon">
-                      <li><a href="#"><span>윤리경영 실천/CEO's Message</span></a></li>
-                      <li><a href="#"><span>행동강령</span></a></li>
-                      <li><a href="#"><span>윤리규범</span></a></li>
-                      <li><a href="#"><span>신문고</span></a></li>
-                    </ul>
-                  </div>
-                </li>
-                <li>
-                  <div class="wep2 cos1">
-                    <a href="#">
-                      <div>
-                        <img src="../kctc/menu3_3.png">
-                      </div>
-                      <span>안전보건경영
-                      </span>
-                    </a>
-                    <ul class="pon">
-                      <li><a href="#"><span>안전보건경영방침</span></a></li>
-                      <li><a href="#"><span>안전보건경영활동</span></a></li>
-                      <li><a href="#"><span>종사자 의견</span></a></li>
-                    </ul>
-                  </div>
-                </li>
-                <li>
-                  <div class="wep2 cos2">
-                    <a href="#">
-                      <div>
-                        <img src="../kctc/menu3_4.png">
-                      </div>
-                      <span>인증현황</span>
-                    </a>
-                  </div><div class="wep2 cos2">
-                    <a href="#">
-                      <div>
-                        <img src="../kctc/menu3_5.png">
-                      </div>
-                      <span>사회공헌</span>
-                    </a> 
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </li>
-          <li>
-            <a href="./side4.html">투자정보</a>
-            <div class="dep_web">
-              <ul>
-                <li class="ji">
-                  <div class="wep2 cos1 ">
-                    <a href="./side4.html">
-                      <div>
-                        <img src="../kctc/menu4_1.png">
-                      </div>
-                      <span>경영정보
-                      </span>
-                    </a>
-                    <ul class="pon">
-                      <li><a href="#"><span>주주구성</span></a></li>
-                      <li><a href="#"><span>이사회</span></a></li>
-                      <li><a href="#"><span>투자회사 현황</span></a></li>
-                    </ul>
-                  </div>
-                </li>
-                <li class="ji">
-                  <div class="wep2 cos1">
-                    <a href="#">
-                      <div>
-                        <img src="../kctc/menu4_2.png">
-                      </div>
-                      <span>재무정보
-                      </span>
-                    </a>
-                    <ul class="pon">
-                      <li><a href="#"><span>요약 재무상태표</span></a></li>
-                      <li><a href="#"><span>요약 손익 계산서</span></a></li>
-                      <li><a href="#"><span>신용등급</span></a></li>
-                    </ul>
-                  </div>
-                </li>
-                <li class="ji">
-                  <div class="wep2 cos1">
-                    <a href="#">
-                      <div>
-                        <img src="../kctc/menu4_3.png">
-                      </div>
-                      <span>IR공고
-                      </span>
-                    </a>
-                  </div>
-                </li>
-                <li class="ji">
-                  <div class="wep2 cos1">
-                    <a href="#">
-                      <div>
-                        <img src="../kctc/menu4_4.png">
-                      </div>
-                      <span>
-                      </span>
-                    </a>
-                    <ul class="pon">
-                      <li><a href="#"><span>결산 공고</span></a></li>
-                      <li><a href="#"><span>발행주식수 및 변동 현황</span></a></li>
-                      <li><a href="#"><span>서업보고서 공고</span></a></li>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </li>
-        </ul>
-      </nav>
-      <div>
+    <header id="header" class="header">
+      <div class="inner">
+        <h1 class="head_name">
+          <a href="./index.html" ><img src="../kctc/logo.png"></a>
+        </h1>
+        <nav class="head_menu">
+          <span>bing</span>
+          <ul>
+            <li>
+              <a >기업소개</a>
+              <div class="dep_web">
+                <ul>
+                  <li>
+                    <div class="wep2 cos2">
+                      <a href="./side1.html">
+                        <div><img src="../kctc/menu1_1.png" ></div>
+                        <span>기업소개</span>
+                      </a>
+                    </div>
+                    <div class="wep2 cos2">
+                      <a href="#">
+                        <div><img src="../kctc/menu1_2.png" ></div>
+                        <span>기업연혁</span>
+                      </a>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="wep2 cos2">
+                      <a href="#">
+                        <div><img src="../kctc/menu1_3.png" ></div>
+                        <span>CEO인사말</span>
+                      </a>
+                    </div>
+                    <div class="wep2 cos2">
+                      <a href="#">
+                        <div><img src="../kctc/menu1_4.png" ></div>
+                        <span>네트워크</span>
+                      </a>
+                    </div>
+                  </li>
+                  <li class="k1">
+                    <div class="wep2 cos1">
+                      <a href="./side3.html">인재채용</a>
+                      <ul class="wep3">
+                        <li><a href="#"><span>KCTC인재상</span></a></li>
+                        <li><a href="#"><span>인사복지</span></a></li>
+                        <li><a href="#"><span>채용절차</span></a></li>
+                        <li><a href="#"><span>채용공고</span></a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="k2">
+                    <div class="wep2 cos1">
+                      <a href="#">
+                        <div><img src="../kctc/menu1_6.png" ></div>
+                        <span>사업장 소개</span>
+                      </a>
+                      <ul>
+                        <li><a href="#">자사/본사</a></li>
+                        <li><a href="#">물류센터</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a >사업소개</a>
+              <div class="dep_web">
+                <ul >
+                  <li>
+                    <div class="wep2 cos1">
+                      <a href="./side2.html">
+                        <div>
+                          <img src="../kctc/menu2_1.png" > 
+                        </div>
+                        <span>컨테이너 사업</span>
+                      </a>
+                      <ul class="pon">
+                        <li><a href="#"><span>사업안내</span></a></li>
+                        <li><a href="#"><span>컨테이너 운송</span></a></li>
+                        <li><a href="#"><span>RO/RO 하역</span></a></li>
+                        <li><a href="#"><span>CY·CFS 사업</span></a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="wep2 cos1">
+                      <a>
+                        <div>
+                          <img src="../kctc/menu2_2.png" > 
+                        </div>
+                        <span>BULK사업</span>
+                      </a>
+                      <ul class="pon">
+                        <li><a href="#"><span>사업안내</span></a></li>
+                        <li><a href="#"><span>국제물류</span></a></li>
+                        <li><a href="#"><span>중량물</span></a></li>
+                        <li><a href="#"><span>BULK 하역</span></a></li>
+                        <li><a href="#"><span>BULK 운송</span></a></li>
+                      </ul>
+                    </div >
+                  </li>
+                  <li>
+                    <div class="wep2 cos1">
+                      <a href="#">
+                        <div>
+                          <img src="../kctc/menu2_3.png" > 
+                        </div>
+                        <span>TPL사업</span>
+                      </a>
+                      <ul class="pon">
+                        <li><a href="#"><span>사업안내</span></a></li>
+                        <li><a href="#"><span>시설현황</span></a></li>
+                        <li><a href="#"><span>3PL서비스 및 시스템</span></a></li>
+                        <li><a href="#"><span>Operation Flow</span></a></li>
+                        <li><a href="#"><span>특화운영분야</span></a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="wep2 cos2">
+                      <a href="#">
+                        <div>
+                          <img src="../kctc/menu2_4.png" > 
+                        </div>
+                        <span>터미널 및 창고 운영사업</span>
+                      </a>
+                    </div>
+                    <div class="wep2 cos2">
+                      <a href="#">
+                        <div>
+                          <img src="../kctc/menu2_5.png" > 
+                        </div>
+                        <span>해외사업</span>
+                      </a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a >지속가능경영</a>
+              <div class="dep_web">
+                <ul>
+                  <li>
+                    <div class="wep2 cos1">
+                      <a href="./side3.html">
+                        <div>
+                          <img src="../kctc/menu3_1.png">
+                        </div>
+                        <span>가치관 경영
+                        </span>
+                      </a href="#">
+                    </div>
+                  </li>
+                  <li>
+                    <div class="wep2 cos1">
+                      <a href="#">
+                        <div>
+                          <img src="../kctc/menu3_2.png">
+                        </div>
+                        <span>윤리경영
+                        </span>
+                      </a>
+                      <ul class="pon">
+                        <li><a href="#"><span>윤리경영 실천/CEO's Message</span></a></li>
+                        <li><a href="#"><span>행동강령</span></a></li>
+                        <li><a href="#"><span>윤리규범</span></a></li>
+                        <li><a href="#"><span>신문고</span></a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="wep2 cos1">
+                      <a href="#">
+                        <div>
+                          <img src="../kctc/menu3_3.png">
+                        </div>
+                        <span>안전보건경영
+                        </span>
+                      </a>
+                      <ul class="pon">
+                        <li><a href="#"><span>안전보건경영방침</span></a></li>
+                        <li><a href="#"><span>안전보건경영활동</span></a></li>
+                        <li><a href="#"><span>종사자 의견</span></a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="wep2 cos2">
+                      <a href="#">
+                        <div>
+                          <img src="../kctc/menu3_4.png">
+                        </div>
+                        <span>인증현황</span>
+                      </a>
+                    </div><div class="wep2 cos2">
+                      <a href="#">
+                        <div>
+                          <img src="../kctc/menu3_5.png">
+                        </div>
+                        <span>사회공헌</span>
+                      </a> 
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a >투자정보</a>
+              <div class="dep_web">
+                <ul>
+                  <li class="ji">
+                    <div class="wep2 cos1 ">
+                      <a href="./side4.html">
+                        <div>
+                          <img src="../kctc/menu4_1.png">
+                        </div>
+                        <span>경영정보
+                        </span>
+                      </a>
+                      <ul class="pon">
+                        <li><a href="#"><span>주주구성</span></a></li>
+                        <li><a href="#"><span>이사회</span></a></li>
+                        <li><a href="#"><span>투자회사 현황</span></a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="ji">
+                    <div class="wep2 cos1">
+                      <a href="#">
+                        <div>
+                          <img src="../kctc/menu4_2.png">
+                        </div>
+                        <span>재무정보
+                        </span>
+                      </a>
+                      <ul class="pon">
+                        <li><a href="#"><span>요약 재무상태표</span></a></li>
+                        <li><a href="#"><span>요약 손익 계산서</span></a></li>
+                        <li><a href="#"><span>신용등급</span></a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="ji">
+                    <div class="wep2 cos1">
+                      <a href="#">
+                        <div>
+                          <img src="../kctc/menu4_3.png">
+                        </div>
+                        <span>IR공고
+                        </span>
+                      </a>
+                    </div>
+                  </li>
+                  <li class="ji">
+                    <div class="wep2 cos1">
+                      <a href="#">
+                        <div>
+                          <img src="../kctc/menu4_4.png">
+                        </div>
+                        <span>
+                        </span>
+                      </a>
+                      <ul class="pon">
+                        <li><a href="#"><span>결산 공고</span></a></li>
+                        <li><a href="#"><span>발행주식수 및 변동 현황</span></a></li>
+                        <li><a href="#"><span>서업보고서 공고</span></a></li>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </nav>
         <a href="#">e-Biz</a>
         <a href="#">ENG</a>
-        <div>
+        <div class="side_menu">
           <button class="button" type="button">
             <span></span>
             <span></span>
-            <span></span>     
-            <div class="m_menu">
-              <ul>
-                <li>
-                  <a href="./side1.html">회사소개</a>
-                  <ul>
-                    <li><a href="./side1.html">기업소개</a></li>
-                    <li><a href="#">CEO인사말</a></li>
-                    <li><a href="#">기업연혁</a></li>
-                    <li><a href="#">사업장소개</a></li>
-                    <li><a href="#">네트워크</a></li>
-                    <li><a href="#">인재채용</a></li>
-                  </ul>
-                </li>
-                <li>
-                  <a href="./side2.html">사업소개</a>
-                  <ul>
-                    <li><a href="#">컨테이너 사업</a></li>
-                    <li><a href="#">BULK사업</a></li>
-                    <li><a href="#">TPL사업</a></li>
-                    <li><a href="#">터미널및창고운영사업</a></li>
-                    <li><a href="#">해외사업</a></li>
-                  </ul>
-                </li>
-                <li>
-                  <a href="./side3.html">지속가능경영</a>
-                  <ul>
-                    <li><a href="#">가치관 경영</a></li>
-                    <li><a href="#">윤리경영</a></li>
-                    <li><a href="#">안정보건경영</a></li>
-                    <li><a href="#">인증현황</a></li>
-                    <li><a href="#">사회공헌</a></li>
-                  </ul>
-                </li>
-                <li>
-                  <a href="./side4.html">투자정보</a>
-                  <ul>
-                    <li><a href="#">경영정보</a></li>
-                    <li><a href="#">재무정보</a></li>
-                    <li><a href="#">공시정보</a></li>
-                    <li><a href="#">IR공고</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </div>   
-          </button>
+            <span></span>
+          </button> 
+          <div class="m_menu">
+            <ul>
+              <li class="sm1">
+                <a href="./side1.html">회사소개</a>
+                <ul class="m_menu_01 dep_menu ">
+                  <li><a href="./side1.html">기업소개</a></li>
+                  <li><a href="#">CEO인사말</a></li>
+                  <li><a href="#">기업연혁</a></li>
+                  <li class="has_dep">
+                    <a href="#">사업장소개</a>
+                    <ul class="depth3">
+                      <li><a href="#">지사/지점</a></li>
+                      <li><a href="#">물류센터</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">네트워크</a></li>
+                  <li class="has_dep">
+                    <a href="#">인재채용</a>
+                    <ul class="depth3">
+                      <li><a href="#">KCTC 인재상</a></li>
+                      <li><a href="#">인사복지</a></li>
+                      <li><a href="#">채용절차</a></li>
+                      <li><a href="#">채용공고</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="sm2">
+                <a href="./side2.html">사업소개</a>
+                <ul class="m_menu_02 dep_menu">
+                  <li class="has_dep">
+                    <a href="#">컨테이너 사업</a>
+                    <ul class="depth3">
+                      <li><a href="#">사업안내</a></li>
+                      <li><a href="#">컨테이너 운송</a></li>
+                      <li><a href="#">RO/RO 하역</a></li>
+                      <li><a href="#">CY·CFS 사업</a></li>
+                    </ul>
+                  </li>
+                  <li class="has_dep">
+                    <a href="#">BULK사업</a>
+                    <ul class="depth3">
+                      <li><a href="#">사업안내</a></li>
+                      <li><a href="#">국제물류</a></li>
+                      <li><a href="#">중량물</a></li>
+                      <li><a href="#">BULK 하역</a></li>
+                      <li><a href="#">BULK 운송</a></li>
+                    </ul>
+                  </li>
+                  <li class="has_dep">
+                    <a href="#">TPL사업</a>
+                    <ul class="depth3">
+                      <li><a href="#">사업안내</a></li>
+                      <li><a href="#">시설현황</a></li>
+                      <li><a href="#">3PL 서비스 및 시스템</a></li>
+                      <li><a href="#">Operation Flow</a></li>
+                      <li><a href="#">특화운영분야</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">터미널및창고운영사업</a></li>
+                  <li><a href="#">해외사업</a></li>
+                </ul>
+              </li>
+              <li class="sm3">
+                <a href="./side3.html">지속가능경영</a>
+                <ul class="m_menu_03 dep_menu">
+                  <li><a href="#">가치관 경영</a></li>
+                  <li class="has_dep">
+                    <a href="#">윤리경영</a>
+                    <ul class="depth3">
+                      <li><a href="#">윤리경영 실천 / CEO's Message</a></li>
+                      <li><a href="#">행동강령</a></li>
+                      <li><a href="#">윤리규범</a></li>
+                      <li><a href="#">신문고</a></li>
+                    </ul>
+                  </li>
+                  <li class="has_dep">
+                    <a href="#">안정보건경영</a>
+                    <ul class="depth3">
+                      <li><a href="#">안전보건경영방침</a></li>
+                      <li><a href="#">안전보건경영활동</a></li>
+                      <li><a href="#">종사자 의견</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">인증현황</a></li>
+                  <li><a href="#">사회공헌</a></li>
+                </ul>
+              </li >
+              <li class="sm4">
+                <a href="./side4.html">투자정보</a>
+                <ul class="m_menu_04 dep_menu">
+                  <li class="has_dep">
+                    <a href="#">경영정보</a>
+                    <ul class="depth3">
+                      <li><a href="#">주주구성</a></li>
+                      <li><a href="#">이사회</a></li>
+                      <li><a href="#">기업지배구조</a></li>
+                    </ul>
+                  </li class="has_dep">
+                  <li><a href="#">재무정보</a></li>
+                  <li><a href="#">공시정보</a></li>
+                  <li class="has_dep">
+                    <a href="#">IR공고</a>
+                    <ul class="depth3">
+                      <li><a href="#">결산공고</a></li>
+                      <li><a href="#">발행주식수 및 자본금 변동현황</a></li>
+                      <li><a href="#">사업보고서 공고</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
         </div>
-      </div>  
+        </div>
+      </div>
     </header>
     <div >
       <div class="t1">
@@ -430,36 +503,7 @@
       </div>
     </footer>
   </div>
-  <script>
-    const button= document.querySelector('.button')
-    button.onclick =function(){
-      button.classList.toggle('active')
-  }
-  const elCk =document.querySelectorAll(`.header>nav>ul>li`);
-    const elWep =document.querySelectorAll(`.dep_web`);
-    let idx=0;
-    
-
-
-
-    elCk.forEach
-    (function(wep,i)
-      {
-        wep.onclick = function(e){ 
-          
-          /* e.preventDefault(); */
-          
-          elCk[idx].classList.remove(`active`)
-          elWep[idx].classList.remove(`active`)
-          elCk[i].classList.add(`active`)
-          elWep[i].classList.add(`active`)
-          
-          idx=i;
-        } 
-      }
-    
-   )
-  </script>
+  
 
 </body>
 </html>
