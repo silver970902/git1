@@ -453,12 +453,14 @@ body{
   
     .inner>a:nth-of-type(1){
       
-      width: 60px;
+      margin-top: 0;
+      position: absolute;
+      top: 17px;
+      right: 100px;
+      width: 50px;
       height: 24px;
       line-height: 24px;
-      font-size: 13px;
-      border-radius: 40px;
-      margin-right: 8px;
+      font-size: 14px;
     } 
     .inner> a:nth-of-type(2){
       font-size: 15px;
@@ -547,6 +549,7 @@ body{
     .header.active>div>a:nth-of-type(2){
       color: #fff;
     }
+   
     .m_menu>ul{
       width: auto;
       text-align: left;
@@ -622,6 +625,7 @@ body{
       font-size: 15px;
       letter-spacing: -1px;
       vertical-align: top;}
+      .dep_menu{background-color: #f9f9f9;} 
     .has_dep{
       width: auto;
       min-height: 0;
@@ -647,8 +651,18 @@ body{
       background-color: #fff
       ;
     }
+    .depth3{background-color: #eeeeee;}
+    .depth3>li{
+      border-top: 1px  solid #a3a3a3;
+    }
+    .depth3>li>a{
+      margin-top: 0;
+      padding: 0 18px 0 57px;
+      color: #333;
+      line-height: 56px;
+      font-size: 15px; 
+    }
   
-    
     button>span{position: absolute;
       left: 0;
       transition: 0.3s;}
@@ -678,6 +692,7 @@ body{
 
 
 @media(max-width:760px){
+   
   .header{
     position: fixed;
     /* height: 100px; */
@@ -702,12 +717,13 @@ body{
     text-align: center;
   }
   .inner>h1{
-    margin-right:150px ;
+    margin-right:0 ;
     width: 181px;
     display: inline-block;
     vertical-align: top;
   }
   .inner>h1>a{
+    
     display: block;
   /*   padding: 34px 5px; */
   }
@@ -769,57 +785,37 @@ body{
   .side_menu{
     
 
+} .has_dep{
+  width: auto;
+  min-height: 0;
+  padding: 0;
+ }
+.has_dep >a{ display: block;
+  margin-top: 0;
+  padding: 0 18px 0 57px;
+  color: #333;
+  line-height: 56px;
+  font-size: 15px; 
+  background:url(../kctc/ico_depth.png) no-repeat 100% 50%;
+  background-size: 12px auto;
+  background-origin: content-box
 }
-  /* #header{
-    position: fixed;
-    height: 100px;
-    width: 100%;
-    display: flex;
-    margin: 0 auto;
-    align-items: center;
-    justify-content: space-between;
-    z-index: 1000;
-    top: 0;
-  }
-  #header nav {display: inline-block;}
-  #header>nav>a{
-    line-height: 100px;
-    padding: 0 20px;
-  }
-  #header > nav > a:nth-of-type(1){padding-left: 100px;}
-  #header> h1{
-    padding: 34px 5px;
-  }
-  #header>div{
-    margin-right: 50px;
-    display: flex;
-  }
-  #header>div>a:nth-of-type(1){
-    display: none;
-    border: 2px solid #000063;
-    border-radius: 40px ;
-    height: 31px;
-    width: 66px;
-    text-align: center;
-    font-size: 17px;
-    font-weight: 900;
-    color: #000063;
-    margin-right: 15px;
-    }
-  #header>div>a:nth-of-type(1):hover{
-    transition: 0.5s;
-    color: #fff;
-    background-color: #000063;
-    border: #fff;
-    
-  }
-  #header>div>a:nth-of-type(2){
-    border-left: 1px solid #eee;
-    color: #a3a3a3;
-    padding-left: 18px;
-    
-    font-size: 17px;
-  } */
+.has_dep.on>a{
+  background:url(../kctc/ico_depth_on.png) no-repeat 100% 50%;
+  background-size: 12px auto;
+  background-origin: content-box
+}
+.depth3>li{
+  border-top: 1px  solid #a3a3a3;
+}
+.depth3>li>a{
+  margin-top: 0;
+  padding: 0 18px 0 57px;
+  color: #333;
+  line-height: 56px;
+  font-size: 15px; 
+}
+
   button{
     position: relative;
       border: 0 none;
@@ -841,9 +837,9 @@ body{
    button.active>span:nth-of-type(1){transition: 0.3s; top:50%;transform: rotate(45deg); width: 20px;}
    button.active>span:nth-of-type(2){transition: 0.3s; opacity: 0;}
    button.active>span:nth-of-type(3){transition: 0.3s; top:50%; transform: rotate(-45deg); width: 20px;}
+
   
-  }
 
-
+}
 
  

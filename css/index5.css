@@ -449,6 +449,8 @@ color: rgba(0, 0, 0, 0);
 
 
 @media(max-width:760px){
+  section{width: 100%;    overflow: hidden;
+    overflow-x: auto;}
   .j2>section>h3{
     position: relative;
     margin-bottom: 10px;
