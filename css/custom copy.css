@@ -237,11 +237,11 @@
 /* Animations for content elements */
 
 .sl-trans-elems .deco{
-	-webkit-animation: /* roll 1s ease-out both ,*/ fadeIn 1s ease-out both;
-	-moz-animation: /* roll 1s ease-out both, */ fadeIn 1s ease-out both;
-	-o-animation: /* roll 1s ease-out both, */ fadeIn 1s ease-out both;
-	-ms-animation: /* roll 1s ease-out both,  */fadeIn 1s ease-out both;
-	animation: /* roll 1s ease-out both, */ fadeIn 1s ease-out both;
+/* 	-webkit-animation: */ /*  roll 1s ease-out both */ /* fadeIn 1s ease-out both; */
+	/* -moz-animation: *//*  roll 1s ease-out both */  /* fadeIn 1s ease-out both; */
+	/* -o-animation:  */ /* roll 1s ease-out both, */  /* fadeIn 1s ease-out both; */
+	/* -ms-animation:  */ /* roll 1s ease-out both */  /* fadeIn 1s ease-out both; */
+	/* animation: */  /* roll 1s ease-out both, *//*  fadeIn 1s ease-out both; */
 }
 .sl-trans-elems h2{
 	-webkit-animation: moveUp 1s ease-in-out both;
@@ -278,7 +278,7 @@
 	-ms-animation: fadeOut 1s linear both;
 	animation: fadeOut 1s linear both;
 }
-/* @-webkit-keyframes roll{
+@-webkit-keyframes roll{
 	0% {-webkit-transform: translateX(500px) rotate(360deg);}
 	100% {-webkit-transform: translateX(0px) rotate(0deg);}
 }
@@ -317,27 +317,28 @@
 @keyframes moveUp{
 	0% {transform: translateY(40px);}
 	100% {transform: translateY(0px);}
-} */
-/* @-webkit-keyframes fadeIn{
+} 
+/*  @-webkit-keyframes fadeIn{
 	0% {opacity: 0;}
 	100% {opacity: 1;}
-}
+} */
 @-moz-keyframes fadeIn{
 	0% {opacity: 0;}
 	100% {opacity: 1;}
-}
+} 
 @-o-keyframes fadeIn{
 	0% {opacity: 0;}
 	100% {opacity: 1;}
 }
-@-ms-keyframes fadeIn{
+ @-ms-keyframes fadeIn{
 	0% {opacity: 0;}
 	100% {opacity: 1;}
-}
-@keyframes fadeIn{
+} 
+ @keyframes fadeIn{
 	0% {opacity: 0;}
-	100% {opacity: 1;}
-} */
+	100% {opacity: 1;} 
+} 
+/*
 @-webkit-keyframes scaleDown{
 	0% {-webkit-transform: scale(1);}
 	100% {-webkit-transform: scale(0.5);}
@@ -357,7 +358,7 @@
 @keyframes scaleDown{
 	0% {transform: scale(1);}
 	100% {transform: scale(0.5);}
-}
+} */
 @-webkit-keyframes fadeOut{
 	0% {opacity: 1;}
 	100% {opacity: 0;}
